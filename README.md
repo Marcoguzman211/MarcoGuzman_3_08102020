@@ -1,6 +1,11 @@
 # MarcoGuzman_3_08102020
 Projet 3 Ohmyfood du parcours Développeur Web chez OpenClassrooms
-ontenu des pagesPage d’accueil (x1)●Affichage de la localisation des restaurants.
+
+Contenu des pages
+
+Page d’accueil (x1)
+
+●Affichage de la localisation des restaurants.
 
 Identité
 
