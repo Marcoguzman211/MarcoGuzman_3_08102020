@@ -1,3 +1,11 @@
+@import "scss/config/_config.scss";
+@import "scss/config/_mixins.scss";
+
+/* Fonts
+font-family: 'Roboto', sans-serif;
+font-family: 'Shrikhand', cursive;
+ */
+
 * {
     padding: 0;
     margin: 0;
@@ -5,4 +13,113 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+}
+
+//Index.html
+.header {
+    &__logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 4em;
+        width: 100%;
+        box-shadow: 0px 2px 0px gray;
+    }
+    &__localisation {
+        border-top: 3px solid gray;
+        background: #eaeaea;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        height: 3em;
+        width: 100%;
+    }
+    &__localisation--icon {
+        justify-self: center;
+        position: relative;
+        left: 7em;
+    }
+    &__localisation--text {
+        margin-left: auto;
+        margin-right: auto;
+        color: hsl(0, 0, (35%));
+        font-weight: bold;
+    }
+}
+
+.topSection {
+    display: flex;
+    background: #f6f6f6;
+    flex-direction: column;
+    box-sizing: border-box;
+    height: 20em;
+    width: 100%;
+    &__header {
+        margin-top: 1.5em;
+        margin-bottom: .2em;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    &__text {
+        padding: 1em 2.5em;
+        text-align: center;
+        color: hsl(0, 0, (35%));
+    }
+    &__button {
+        border-style: none;
+        border-radius: 25px;
+        height: 3.5em;
+        align-content: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
+        padding-left: 2.5em;
+        padding-right: 2.5em;
+        margin: 0 auto;
+        width: max-content;
+        background: linear-gradient(to right bottom, $secondary 20%, $primary);
+        color: #ffffff;
+        font-size: 1em;
+    }
+}
+
+.fonctionIndex {
+    padding: 5em 0;
+    display: grid;
+    grid-template-rows: auto 1fr 1fr 1fr;
+    row-gap: 1.6em;
+    &__header {
+        margin: auto 0;
+        position: relative;
+        bottom: 1em;
+        padding-left: 1em;
+    }
+    &__button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        column-gap: 3em;
+        border-style: none;
+        border-radius: 25px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        //espace entre le texte et le haut
+        height: 6em;
+        width: 90%;
+        margin: auto;
+        &-icon {}
+        &-text {
+            font-weight: 600;
+        }
+        &-number {
+            font-size: .7em;
+            color: #ffffff;
+            display: inline-block;
+            border-radius: 50%;
+            height: 2em;
+            width: 2em;
+            padding: 0.3em;
+            background: $primary;
+        }
+    }
+    &__button:hover {}
 }
