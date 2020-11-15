@@ -171,3 +171,25 @@ body {
         }
     }
 }
+
+.footer {
+    padding: 2em 5%;
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    background: #353535;
+    &__logo {
+        height: 1em;
+    }
+    &__item-icon {
+        & i {
+            color: #fff;
+        }
+        & a {
+            color: #fff;
+        }
+    }
+    &__item {
+        color: #fff;
+    }
+}
