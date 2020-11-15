@@ -26,7 +26,6 @@ body {
         box-shadow: 0px 2px 0px gray;
     }
     &__localisation {
-        border-top: 3px solid gray;
         background: #eaeaea;
         display: flex;
         justify-content: center;
@@ -95,31 +94,9 @@ body {
         padding-left: 1em;
     }
     &__button {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        column-gap: 3em;
-        border-style: none;
-        border-radius: 25px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-        //espace entre le texte et le haut
-        height: 6em;
-        width: 90%;
-        margin: auto;
         &-icon {}
-        &-text {
-            font-weight: 600;
-        }
-        &-number {
-            font-size: .7em;
-            color: #ffffff;
-            display: inline-block;
-            border-radius: 50%;
-            height: 2em;
-            width: 2em;
-            padding: 0.3em;
-            background: $primary;
-        }
+        &-text {}
+        &-number {}
     }
     &__button:hover {}
 }
