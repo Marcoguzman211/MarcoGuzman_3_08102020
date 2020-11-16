@@ -135,10 +135,6 @@ body {
 }
 
 .restaurants {
-    //padding-top: 3em;
-    //padding-left: 5%;
-    //padding-right: 5%;
-    //padding-bottom: 3em;
     padding: 3em 5%;
     background: #f6f6f6;
     display: grid;
@@ -152,6 +148,8 @@ body {
         height: 100%;
         &-figure {
             margin: 0;
+            display: flex;
+            flex-direction: column;
         }
         &-img {
             height: 10em;
@@ -162,17 +160,20 @@ body {
             max-height: 100%;
             border-radius: 1em 1em 0 0;
         }
-        &-text {
-            margin: 0.2em 0.7em 1em 0.7em;
-        }
-        &-loc {
-            margin: 0.2em 0.7em 0 0.7em;
-        }
-        &-heart {
-            position: relative;
-            font-size: 2em;
-            bottom: 2rem;
-            left: 85%;
+        &-second {
+            display: inline-flex;
+            padding: 0 5%;
+            justify-content: space-between;
+            & h3 {
+                padding: .5em 0;
+            }
+            & p {
+                padding-bottom: .5em;
+            }
+            &-heart {
+                font-size: 2em;
+                align-self: center;
+            }
         }
     }
 }
@@ -181,7 +182,7 @@ body {
     padding: 2em 5%;
     display: flex;
     flex-direction: column;
-    gap: .5em;
+    gap: 1em;
     background: #353535;
     &__logo {
         height: 1em;
@@ -189,6 +190,8 @@ body {
     &__item-icon {
         & i {
             color: #fff;
+            font-size: .8em;
+            margin-right: .5em;
         }
         & a {
             color: #fff;
