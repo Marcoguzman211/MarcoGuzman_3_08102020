@@ -18,9 +18,12 @@ body {
   align-items: center;
   height: 4em;
   width: 100%;
-  box-shadow: 0px 2px 0px gray; }
+  box-shadow: 0px 4px 100px gray; }
+  .header__logo-img {
+    height: 2em; }
 
 .header__localisation {
+  margin-top: 3px;
   background: #eaeaea;
   display: flex;
   justify-content: center;
@@ -45,15 +48,15 @@ body {
   background: #f6f6f6;
   flex-direction: column;
   box-sizing: border-box;
-  height: 20em;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 4em; }
   .topSection__header {
-    margin-top: 1.5em;
+    padding-top: 2em;
     margin-bottom: .2em;
     flex-wrap: wrap;
     text-align: center; }
   .topSection__text {
-    padding: 1em 2.5em;
+    padding: 2em 2.5em;
     text-align: center;
     color: #595959; }
   .topSection__button {
@@ -67,12 +70,12 @@ body {
     padding-right: 2.5em;
     margin: 0 auto;
     width: max-content;
-    background: linear-gradient(to right bottom, #FF79DA 20%, #9356DC);
+    background: linear-gradient(to right bottom, #FF79DA 5%, #9356DC);
     color: #ffffff;
     font-size: 1em; }
 
 .fonctionIndex {
-  padding: 5em 0;
+  padding: 4em 0;
   display: grid;
   grid-template-rows: auto 1fr 1fr 1fr;
   row-gap: 1.6em; }
