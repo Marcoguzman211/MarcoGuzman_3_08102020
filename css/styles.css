@@ -7,7 +7,8 @@ font-family: 'Shrikhand', cursive;
   margin: 0; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: #000; }
 
 body {
   font-family: 'Roboto', sans-serif; }
@@ -85,7 +86,7 @@ body {
     bottom: 1em;
     padding-left: 1em; }
   .fonctionIndex__button {
-    box-shadow: 1px 1px 15px grey;
+    box-shadow: 1px 1px 10px grey;
     border-radius: 20px;
     margin: 0 10%;
     height: 10vh;
@@ -120,6 +121,16 @@ body {
     border-radius: 1.25em;
     box-sizing: border-box;
     height: 100%; }
+    .restaurants__card-new {
+      position: absolute;
+      left: 72%;
+      margin-top: 1rem;
+      padding: 5px 10px;
+      border-radius: 3px;
+      font-size: .9rem;
+      font-weight: 600;
+      background-color: #99e2d0;
+      color: #2a947a; }
     .restaurants__card-figure {
       margin: 0;
       display: flex;
@@ -137,7 +148,7 @@ body {
       padding: 0 5%;
       justify-content: space-between; }
       .restaurants__card-second h3 {
-        padding: .5em 0; }
+        padding: .5em 0 .2em 0; }
       .restaurants__card-second p {
         padding-bottom: .5em; }
       .restaurants__card-second-heart {
@@ -148,15 +159,18 @@ body {
   padding: 2em 5%;
   display: flex;
   flex-direction: column;
-  gap: 1em;
   background: #353535; }
   .footer__logo {
-    height: 1em; }
-  .footer__item-icon i {
-    color: #fff;
-    font-size: .8em;
-    margin-right: .5em; }
-  .footer__item-icon a {
-    color: #fff; }
+    height: 1em;
+    margin-bottom: 5%; }
+  .footer__item-icon {
+    margin-bottom: .3em; }
+    .footer__item-icon i {
+      color: #fff;
+      font-size: .8em;
+      margin-right: .5em; }
+    .footer__item-icon a {
+      color: #fff; }
   .footer__item {
+    margin-bottom: .3em;
     color: #fff; }
