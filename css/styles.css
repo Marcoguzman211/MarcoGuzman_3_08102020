@@ -86,7 +86,7 @@ body {
     bottom: 1em;
     padding-left: 1em; }
   .fonctionIndex__button {
-    box-shadow: 1px 1px 10px grey;
+    box-shadow: 3px 3px 15px #e6e6e6;
     border-radius: 20px;
     margin: 0 10%;
     height: 10vh;
@@ -153,7 +153,34 @@ body {
         padding-bottom: .5em; }
       .restaurants__card-second-heart {
         font-size: 2em;
-        align-self: center; }
+        align-self: center;
+        position: relative; }
+      .restaurants__card-second-heart:hover {
+        color: transparent; }
+      .restaurants__card-second-heart:hover::before, .restaurants__card-second-heart:active::before {
+        display: inline-flex;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        content: "\f004";
+        background-image: linear-gradient(to bottom, #9356DC 50%, #FF79DA, #99E2D0);
+        background-clip: text;
+        animation: like 3s forwards alternate;
+        color: transparent;
+        position: relative;
+        left: 55.5%; }
+
+@keyframes liker {
+  0% {
+    color: black;
+    background-clip: inherit; }
+  50% {
+    background-image: linear-gradient(to bottom, #9356DC 50%, #FF79DA, #99E2D0); }
+  100% {
+    background-image: linear-gradient(to bottom, #9356DC 75%, #FF79DA, #99E2D0); } }
 
 .footer {
   padding: 2em 5%;
