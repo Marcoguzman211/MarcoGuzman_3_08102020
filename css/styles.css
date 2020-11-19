@@ -110,6 +110,10 @@ body {
     .fonctionIndex__button-text {
       margin-right: 5%;
       font-weight: bold; }
+  .fonctionIndex__button:hover {
+    background-color: #f2eafb; }
+  .fonctionIndex__button:hover > i {
+    color: #9356DC; }
 
 .restaurants {
   padding: 3em 5%;
@@ -151,36 +155,46 @@ body {
         padding: .5em 0 .2em 0; }
       .restaurants__card-second p {
         padding-bottom: .5em; }
-      .restaurants__card-second-heart {
+      .restaurants__card-second-heart::before {
         font-size: 2em;
         align-self: center;
-        position: relative; }
-      .restaurants__card-second-heart:hover {
-        color: transparent; }
-      .restaurants__card-second-heart:hover::before, .restaurants__card-second-heart:active::before {
         display: inline-flex;
         font-style: normal;
         font-variant: normal;
         text-rendering: auto;
         -webkit-font-smoothing: antialiased;
         font-family: "Font Awesome 5 Free";
-        font-weight: 900;
+        font-weight: 400;
         content: "\f004";
-        background-image: linear-gradient(to bottom, #9356DC 50%, #FF79DA, #99E2D0);
+        background-image: none;
         background-clip: text;
-        animation: like 3s forwards alternate;
-        color: transparent;
+        color: black;
         position: relative;
-        left: 55.5%; }
+        top: 20%; }
+      .restaurants__card-second-heart:hover::before {
+        display: inline-flex;
+        font-style: normal;
+        font-variant: normal;
+        text-rendering: auto;
+        -webkit-font-smoothing: antialiased;
+        font-family: "Font Awesome 5 Free";
+        content: "\f004";
+        position: relative;
+        top: 20%;
+        animation: liker 2s linear forwards; }
 
 @keyframes liker {
-  0% {
-    color: black;
-    background-clip: inherit; }
-  50% {
-    background-image: linear-gradient(to bottom, #9356DC 50%, #FF79DA, #99E2D0); }
-  100% {
-    background-image: linear-gradient(to bottom, #9356DC 75%, #FF79DA, #99E2D0); } }
+  from {
+    font-weight: 400;
+    background-image: none;
+    background-clip: text;
+    color: black; }
+  to {
+    font-weight: 900;
+    content: "\f004";
+    background-image: linear-gradient(#9356DC, #FF79DA);
+    background-clip: text;
+    color: transparent; } }
 
 .footer {
   padding: 2em 5%;

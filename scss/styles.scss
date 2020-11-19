@@ -133,6 +133,12 @@ body {
             font-weight: bold;
         }
     }
+    &__button:hover {
+        background-color: lighten($primary, 35);
+    }
+    &__button:hover>i {
+        color: $primary;
+    }
 }
 
 .restaurants {
@@ -182,45 +188,52 @@ body {
             & p {
                 padding-bottom: .5em;
             }
-            &-heart {
+            &-heart::before {
                 font-size: 2em;
                 align-self: center;
-                position: relative;
-            }
-            &-heart:hover {
-                color: transparent;
-            }
-            &-heart:hover::before,
-            &-heart:active::before {
                 display: inline-flex;
                 font-style: normal;
                 font-variant: normal;
                 text-rendering: auto;
                 -webkit-font-smoothing: antialiased;
                 font-family: "Font Awesome 5 Free";
-                font-weight: 900;
+                font-weight: 400;
                 content: "\f004";
-                background-image: linear-gradient(to bottom, $primary 50%, $secondary, $third);
+                background-image: none;
                 background-clip: text;
-                animation: like 3s forwards alternate;
-                color: transparent;
+                color: black;
                 position: relative;
-                left: 55.5%;
+                top: 20%;
+            }
+            &-heart:hover::before {
+                display: inline-flex;
+                font-style: normal;
+                font-variant: normal;
+                text-rendering: auto;
+                -webkit-font-smoothing: antialiased;
+                font-family: "Font Awesome 5 Free";
+                content: "\f004";
+                position: relative;
+                top: 20%;
+                animation: liker 2s linear forwards;
             }
         }
     }
 }
 
 @keyframes liker {
-    0% {
+    from {
+        font-weight: 400;
+        background-image: none;
+        background-clip: text;
         color: black;
-        background-clip: inherit;
     }
-    50% {
-        background-image: linear-gradient(to bottom, $primary 50%, $secondary, $third);
-    }
-    100% {
-        background-image: linear-gradient(to bottom, $primary 75%, $secondary, $third);
+    to {
+        font-weight: 900;
+        content: "\f004";
+        background-image: linear-gradient($primary, $secondary);
+        background-clip: text;
+        color: transparent;
     }
 }
 
