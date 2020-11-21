@@ -171,8 +171,9 @@ body {
         color: black;
         position: relative;
         top: 20%;
+        transition: all 1s ease-out;
         cursor: pointer; }
-      .restaurants__card-second-heart:hover::before {
+      .restaurants__card-second-heart:active::before {
         display: inline-flex;
         font-style: normal;
         font-variant: normal;
@@ -182,20 +183,11 @@ body {
         content: "\f004";
         position: relative;
         top: 20%;
-        animation: liker 2s linear forwards; }
-
-@keyframes liker {
-  from {
-    font-weight: 400;
-    background-image: none;
-    background-clip: text;
-    color: black; }
-  to {
-    font-weight: 900;
-    content: "\f004";
-    background-image: linear-gradient(#9356DC, #FF79DA);
-    background-clip: text;
-    color: transparent; } }
+        animation: liker 2s linear forwards;
+        font-weight: 900;
+        background-image: linear-gradient(#9356DC, #FF79DA);
+        background-clip: text;
+        color: transparent; }
 
 /* Header restaurants */
 .resto__header {
@@ -235,7 +227,6 @@ body {
     background-size: 100%;
     background-position: center; }
 
-/*Partie principales Restaurants */
 .resto__container {
   display: grid;
   background: #f6f6f6;
@@ -254,6 +245,7 @@ body {
     font-size: 1.7em;
     align-self: center; }
 
+/*Plats dans les menus (cartes) */
 .resto__section {
   display: grid;
   row-gap: 1em;
@@ -280,22 +272,23 @@ body {
       width: 85%; }
     .resto__card-bottom span {
       font-weight: bold; }
-  .resto__card .footer {
-    padding: 2em 5%;
-    display: flex;
-    flex-direction: column;
-    background: #353535; }
-    .resto__card .footer__logo {
-      height: 1em;
-      margin-bottom: 5%; }
-    .resto__card .footer__item-icon {
-      margin-bottom: .3em; }
-      .resto__card .footer__item-icon i {
-        color: #fff;
-        font-size: .8em;
-        margin-right: .5em; }
-      .resto__card .footer__item-icon a {
-        color: #fff; }
-    .resto__card .footer__item {
-      margin-bottom: .3em;
+
+.footer {
+  padding: 2em 5%;
+  display: flex;
+  flex-direction: column;
+  background: #353535; }
+  .footer__logo {
+    height: 1em;
+    margin-bottom: 5%; }
+  .footer__item-icon {
+    margin-bottom: .3em; }
+    .footer__item-icon i {
+      color: #fff;
+      font-size: .8em;
+      margin-right: .5em; }
+    .footer__item-icon a {
       color: #fff; }
+  .footer__item {
+    margin-bottom: .3em;
+    color: #fff; }
