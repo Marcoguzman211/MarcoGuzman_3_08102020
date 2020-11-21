@@ -235,22 +235,67 @@ body {
     background-size: 100%;
     background-position: center; }
 
-.footer {
-  padding: 2em 5%;
+/*Partie principales Restaurants */
+.resto__container {
+  display: grid;
+  background: #f6f6f6;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  margin-top: -3em;
+  padding: 2em 5% 0 5%; }
+
+.resto__titre {
+  display: flex;
+  justify-content: space-between; }
+  .resto__titre h2 {
+    font-family: 'Shrikhand', cursive;
+    font-size: 1.7em; }
+  .resto__titre i {
+    font-size: 1.7em;
+    align-self: center; }
+
+.resto__section {
+  display: grid;
+  row-gap: 1em;
+  padding-top: 2em; }
+  .resto__section h2 {
+    font-size: 1em;
+    height: 1.5em;
+    border-bottom: 4px solid #99E2D0;
+    font-weight: 400; }
+
+.resto__card {
   display: flex;
   flex-direction: column;
-  background: #353535; }
-  .footer__logo {
-    height: 1em;
-    margin-bottom: 5%; }
-  .footer__item-icon {
-    margin-bottom: .3em; }
-    .footer__item-icon i {
-      color: #fff;
-      font-size: .8em;
-      margin-right: .5em; }
-    .footer__item-icon a {
+  padding: 1em .5em .7em .5em;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 4px gray; }
+  .resto__card-bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1em; }
+    .resto__card-bottom p {
+      font-weight: 300;
+      width: 85%; }
+    .resto__card-bottom span {
+      font-weight: bold; }
+  .resto__card .footer {
+    padding: 2em 5%;
+    display: flex;
+    flex-direction: column;
+    background: #353535; }
+    .resto__card .footer__logo {
+      height: 1em;
+      margin-bottom: 5%; }
+    .resto__card .footer__item-icon {
+      margin-bottom: .3em; }
+      .resto__card .footer__item-icon i {
+        color: #fff;
+        font-size: .8em;
+        margin-right: .5em; }
+      .resto__card .footer__item-icon a {
+        color: #fff; }
+    .resto__card .footer__item {
+      margin-bottom: .3em;
       color: #fff; }
-  .footer__item {
-    margin-bottom: .3em;
-    color: #fff; }
