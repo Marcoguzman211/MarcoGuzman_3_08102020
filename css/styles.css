@@ -1,4 +1,5 @@
-@keyframes animatioMenu {
+@charset "UTF-8";
+@keyframes animationMenu {
   from {
     opacity: 0;
   }
@@ -8,43 +9,43 @@
 }
 
 .entree-1 {
-  animation: animationMenu 2s ease-in-out 0.1s;
+  animation: animationMenu 2s ease-in-out forwards 0.1s;
 }
 
 .entree-2 {
-  animation: animationMenu 2s ease-in-out 0.2s;
+  animation: animationMenu 2s ease-in-out forwards 0.2s;
 }
 
 .entree-3 {
-  animation: animationMenu 2s ease-in-out 0.3s;
+  animation: animationMenu 2s ease-in-out forwards 0.3s;
 }
 
 .entree-4 {
-  animation: animationMenu 2s ease-in-out 0.4s;
+  animation: animationMenu 2s ease-in-out forwards 0.4s;
 }
 
 .plats-1 {
-  animation: animationMenu 2s ease-in-out 0.5s;
+  animation: animationMenu 2s ease-in-out forwards 0.5s;
 }
 
 .plats-2 {
-  animation: animationMenu 2s ease-in-out 0.6s;
+  animation: animationMenu 2s ease-in-out forwards 0.6s;
 }
 
 .plats-3 {
-  animation: animationMenu 2s ease-in-out 0.7s;
+  animation: animationMenu 2s ease-in-out forwards 0.7s;
 }
 
 .desserts-1 {
-  animation: animationMenu 2s ease-in-out 0.8s;
+  animation: animationMenu 2s ease-in-out forwards 0.8s;
 }
 
 .desserts-2 {
-  animation: animationMenu 2s ease-in-out 0.9s;
+  animation: animationMenu 2s ease-in-out forwards 0.9s;
 }
 
 .desserts-3 {
-  animation: animationMenu 2s ease-in-out 1s;
+  animation: animationMenu 2s ease-in-out forwards 1s;
 }
 
 /*Fonts
@@ -386,6 +387,8 @@ body {
   border-radius: 15px;
   background-color: #ffffff;
   box-shadow: 0px 0px 4px gray;
+  /*Pour que les cartes soient cachés au chargement */
+  opacity: 0;
 }
 
 .resto__card-bottom {
