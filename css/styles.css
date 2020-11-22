@@ -319,25 +319,25 @@ body {
 }
 
 .resto__image-one {
-  background-image: url(/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
+  background-image: url(https://marcoguzman211.github.io/MarcoGuzman_3_08102020/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
   background-size: 100%;
   background-position: center;
 }
 
 .resto__image-two {
-  background-image: url(/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
+  background-image: url(https://marcoguzman211.github.io/MarcoGuzman_3_08102020/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
   background-size: 100%;
   background-position: center;
 }
 
 .resto__image-three {
-  background-image: url(/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
+  background-image: url(https://marcoguzman211.github.io/MarcoGuzman_3_08102020/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
   background-size: 100%;
   background-position: center;
 }
 
 .resto__image-four {
-  background-image: url(/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
+  background-image: url(https://marcoguzman211.github.io/MarcoGuzman_3_08102020/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
   background-size: 100%;
   background-position: center;
 }
@@ -407,8 +407,12 @@ body {
 }
 
 .button__commander {
+  display: flex;
   padding-top: 2em;
   padding-bottom: 5em;
+  box-sizing: initial;
+  width: 100%;
+  justify-content: right;
 }
 
 .button__commander button {
@@ -425,8 +429,6 @@ body {
   background: linear-gradient(to right bottom, #FF79DA 5%, #9356DC);
   color: #ffffff;
   font-size: 1em;
-  margin-left: 25%;
-  margin-right: 25%;
   padding-top: .2em;
   padding-bottom: .2em;
   padding-left: 3.5em;
