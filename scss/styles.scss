@@ -1,9 +1,11 @@
     @import "scss/config/_config.scss";
     @import "scss/config/_mixins.scss";
-    /* Fonts
-font-family: 'Roboto', sans-serif;
-font-family: 'Shrikhand', cursive;
- */
+    @import "scss/config/_animationCartes.scss";
+    /*Fonts
+    font-family: 'Roboto',
+    sans-serif;
+    font-family: 'Shrikhand',
+    cursive; */
     
     * {
         padding: 0;
