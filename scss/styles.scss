@@ -196,7 +196,7 @@
                     transition: all 1s ease-out;
                     cursor: pointer;
                 }
-                &-heart:active::before {
+                &-heart:hover::before {
                     display: inline-flex;
                     font-style: normal;
                     font-variant: normal;

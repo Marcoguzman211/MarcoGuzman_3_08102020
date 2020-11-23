@@ -273,7 +273,7 @@ body {
   cursor: pointer;
 }
 
-.restaurants__card-second-heart:active::before {
+.restaurants__card-second-heart:hover::before {
   display: inline-flex;
   font-style: normal;
   font-variant: normal;
