@@ -48,6 +48,51 @@
   animation: animationMenu 2s ease-in-out forwards 1s;
 }
 
+.loading {
+  display: flex;
+  position: absolute;
+  background: white;
+  height: 100vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  z-index: 400;
+  opacity: 1;
+  animation: disparaitre 1s forwards 1s ease-out, opacityout 1s forwards 1 1s ease-out;
+}
+
+.loading::after {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 10px solid #dddddd;
+  border-top-color: #FF79DA;
+  border-bottom-color: #9356DC;
+  border-right-color: #9356DC;
+  border-left-color: #FF79DA;
+  border-radius: 50%;
+  opacity: 1;
+  animation: loading 1s infinite linear, opacityout 1s forwards 1 .5s ease-out;
+}
+
+@keyframes opacityout {
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes loading {
+  to {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes disparaitre {
+  to {
+    z-index: -100;
+  }
+}
+
 /*Fonts
     font-family: 'Roboto',
     sans-serif;
