@@ -2,6 +2,7 @@
     @import "scss/config/_mixins.scss";
     @import "scss/config/_animationCartes.scss";
     @import "scss/config/_loadingspinner.scss";
+    @import "scss/config/_restocardanim.scss";
     /*Fonts
     font-family: 'Roboto',
     sans-serif;
@@ -299,16 +300,19 @@
             height: 1.5em;
             border-bottom: 4px solid $third;
             font-weight: 400;
+            width: 40px;
         }
     }
     
     .resto__card {
         display: flex;
+        position: relative;
         flex-direction: column;
         padding: 1em .5em .7em .5em;
         border-radius: 15px;
         background-color: #ffffff;
         box-shadow: 0px 0px 4px gray;
+        cursor: pointer;
         /*Pour que les cartes soient cachés au chargement */
         opacity: 0;
         &-bottom {
@@ -321,6 +325,7 @@
             }
             & span {
                 font-weight: bold;
+                transition: padding-right .65s ease-in-out;
             }
         }
     }

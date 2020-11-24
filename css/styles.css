@@ -93,6 +93,56 @@
   }
 }
 
+.resto__card-animation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 200;
+  width: 0;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #99E2D0;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  transition: width .7s ease-in-out;
+}
+
+.resto__card-animation .fa-check-circle {
+  color: white;
+  opacity: 0;
+  transition: opacity .4s ease-in-out .4s;
+}
+
+/*resto__card-bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1em;
+    & p {
+        font-weight: 300;
+        width: 85%;
+    }
+    & span {
+        font-weight: bold;
+    } */
+.resto__card:hover > .resto__card-animation {
+  width: 3.5em;
+}
+
+.resto__card:hover > .resto__card-animation .fa-check-circle {
+  opacity: 1;
+  transition: opacity .4s ease-in-out;
+}
+
+.resto__card:hover > .resto__card-bottom p {
+  word-wrap: normal;
+}
+
+.resto__card:hover > .resto__card-bottom span {
+  padding-right: 4em;
+}
+
 /*Fonts
     font-family: 'Roboto',
     sans-serif;
@@ -423,15 +473,18 @@ body {
   height: 1.5em;
   border-bottom: 4px solid #99E2D0;
   font-weight: 400;
+  width: 40px;
 }
 
 .resto__card {
   display: flex;
+  position: relative;
   flex-direction: column;
   padding: 1em .5em .7em .5em;
   border-radius: 15px;
   background-color: #ffffff;
   box-shadow: 0px 0px 4px gray;
+  cursor: pointer;
   /*Pour que les cartes soient cachés au chargement */
   opacity: 0;
 }
@@ -449,6 +502,7 @@ body {
 
 .resto__card-bottom span {
   font-weight: bold;
+  transition: padding-right .65s ease-in-out;
 }
 
 .button__commander {

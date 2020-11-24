@@ -1,0 +1,49 @@
+.resto__card-animation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 200;
+    width: 0;
+    height: 100%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-color: $third;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    transition: width .7s ease-in-out;
+    & .fa-check-circle {
+        color: white;
+        opacity: 0;
+        transition: opacity .4s ease-in-out .4s;
+    }
+}
+
+
+/*resto__card-bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 1em;
+    & p {
+        font-weight: 300;
+        width: 85%;
+    }
+    & span {
+        font-weight: bold;
+    } */
+
+.resto__card {
+    &:hover>.resto__card-animation {
+        width: 3.5em;
+    }
+    &:hover>.resto__card-animation .fa-check-circle {
+        opacity: 1;
+        transition: opacity .4s ease-in-out;
+    }
+    &:hover>.resto__card-bottom p {
+        word-wrap: normal;
+    }
+    &:hover>.resto__card-bottom span {
+        padding-right: 4em;
+    }
+}
