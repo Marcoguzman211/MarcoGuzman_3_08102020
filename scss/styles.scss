@@ -180,41 +180,6 @@
                 & p {
                     padding-bottom: .5em;
                 }
-                &-heart::before {
-                    font-size: 2em;
-                    align-self: center;
-                    display: inline-flex;
-                    font-style: normal;
-                    font-variant: normal;
-                    text-rendering: auto;
-                    -webkit-font-smoothing: antialiased;
-                    font-family: "Font Awesome 5 Free";
-                    font-weight: 400;
-                    content: "\f004";
-                    background-image: none;
-                    background-clip: text;
-                    color: black;
-                    position: relative;
-                    top: 20%;
-                    transition: all 1s ease-out;
-                    cursor: pointer;
-                }
-                &-heart:hover::before {
-                    display: inline-flex;
-                    font-style: normal;
-                    font-variant: normal;
-                    text-rendering: auto;
-                    -webkit-font-smoothing: antialiased;
-                    font-family: "Font Awesome 5 Free";
-                    content: "\f004";
-                    position: relative;
-                    top: 20%;
-                    animation: liker 2s linear forwards;
-                    font-weight: 900;
-                    background-image: linear-gradient($primary, $secondary);
-                    background-clip: text;
-                    color: transparent;
-                }
             }
         }
     }

@@ -32,3 +32,41 @@
 .resto__titre-heart:hover>.heart-2 {
     opacity: 1;
 }
+
+//Animation coeur index
+.resto__card-heart {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    width: 2.2em;
+    height: inherit;
+    cursor: pointer;
+    & .heart-3 {
+        position: absolute;
+        top: auto;
+        //transform: translate(-50%, -50%);
+        opacity: 1;
+        transition: opacity .4s ease-in-out;
+        font-size: 2em;
+    }
+    & .heart-4 {
+        position: absolute;
+        top: auto;
+        //transform: translate(-50%, -50%);
+        background: -webkit-linear-gradient($primary, $secondary);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        opacity: 0;
+        transition: opacity .4s ease-in-out;
+        font-size: 2em;
+    }
+}
+
+.resto__card-heart:hover>.heart-3 {
+    opacity: 0;
+}
+
+.resto__card-heart:hover>.heart-4 {
+    opacity: 1;
+}
