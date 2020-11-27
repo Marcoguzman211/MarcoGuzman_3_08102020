@@ -284,6 +284,7 @@ body {
 
 .resto__card {
     display: flex;
+    overflow: hidden;
     position: relative;
     flex-direction: column;
     padding: 1em .5em .7em .5em;
@@ -294,14 +295,17 @@ body {
     /*Pour que les cartes soient cachés au chargement */
     opacity: 0;
     & h3 {
-        display: flex;
-        flex-wrap: wrap;
-        transition: width .4s ease-in;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        transition: width .3s linear;
     }
     &-bottom {
         display: flex;
         flex-wrap: nowrap;
         gap: 1em;
+        min-width: 0;
         & p {
             font-weight: 300;
             width: 85%;

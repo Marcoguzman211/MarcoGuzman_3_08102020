@@ -101,16 +101,24 @@
     & span {
         font-weight: bold;
     } */
+.resto__card:hover h3 {
+  width: 80%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
+
 .resto__card:hover > .resto__card-animation {
   width: 3.5em; }
 
 .resto__card:hover > .resto__card-animation .fa-check-circle {
   opacity: 1;
   transition: opacity .4s ease-in-out;
-  animation: loadingTwo 1s; }
+  animation: loadingTwo 1s alternate; }
 
 .resto__card:hover > .resto__card-bottom p {
-  white-space: wrap; }
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
 
 .resto__card:hover > .resto__card-bottom span {
   padding-right: 4em; }
@@ -413,6 +421,7 @@ body {
 
 .resto__card {
   display: flex;
+  overflow: hidden;
   position: relative;
   flex-direction: column;
   padding: 1em .5em .7em .5em;
@@ -423,13 +432,16 @@ body {
   /*Pour que les cartes soient cachés au chargement */
   opacity: 0; }
   .resto__card h3 {
-    display: flex;
-    flex-wrap: wrap;
-    transition: width .4s ease-in; }
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: width .3s linear; }
   .resto__card-bottom {
     display: flex;
     flex-wrap: nowrap;
-    gap: 1em; }
+    gap: 1em;
+    min-width: 0; }
     .resto__card-bottom p {
       font-weight: 300;
       width: 85%; }
