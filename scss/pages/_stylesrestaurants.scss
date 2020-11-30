@@ -58,11 +58,17 @@
         background-image: url(https://marcoguzman211.github.io/MarcoGuzman_3_08102020/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg);
         background-size: 100%;
         background-position: center;
+        @include mq(medium) {
+            background-position: 20% 99%;
+        }
     }
     &-four {
         background-image: url(https://marcoguzman211.github.io/MarcoGuzman_3_08102020/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
         background-size: 100%;
-        background-position: center;
+        background-position: center bottom;
+        @include mq(medium) {
+            background-position: 20% 99%;
+        }
     }
 }
 
@@ -81,11 +87,17 @@
     & h2 {
         font-family: 'Shrikhand', cursive;
         font-size: 1.7em;
+        @include mq(medium) {
+            font-size: 2.5em;
+        }
     }
     & i {
         font-size: 1.7em;
         align-self: center;
         //aligement prix padding-right: 5%;
+        @include mq(medium) {
+            padding-right: 100%;
+        }
     }
 }
 
@@ -161,6 +173,9 @@
         box-shadow: 0px 0px 8px gray;
         cursor: pointer;
         transition: transform 300ms, box-shadow .4s ease-in;
+        @include mq(medium) {
+            font-size: 1.2em;
+        }
     }
     & button:hover {
         transform: scale(1.02);

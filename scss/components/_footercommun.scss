@@ -8,12 +8,21 @@
         display: inline;
         left: 0;
         margin-bottom: 5%;
+        @include mq(medium) {
+            margin-bottom: 2%;
+        }
         & img {
             height: 1em;
+            @include mq(medium) {
+                height: 2em;
+            }
         }
     }
     &__item-icon {
         margin-bottom: .3em;
+        @include mq(medium) {
+            margin-bottom: .5em;
+        }
         & i {
             color: #fff;
             font-size: .8em;
@@ -21,10 +30,17 @@
         }
         & a {
             color: #fff;
+            @include mq(medium) {
+                font-size: 1.1em;
+            }
         }
     }
     &__item {
         margin-bottom: .3em;
         color: #fff;
+        @include mq(medium) {
+            font-size: 1.1em;
+            margin-bottom: .5em;
+        }
     }
 }
