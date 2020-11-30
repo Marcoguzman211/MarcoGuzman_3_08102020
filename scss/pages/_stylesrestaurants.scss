@@ -30,6 +30,9 @@
     @include mq(medium) {
         margin-left: 30%;
     }
+    @include mq(large) {
+        margin-left: 35%;
+    }
 }
 
 .resto__image {
@@ -45,6 +48,9 @@
         @include mq(medium) {
             background-position: bottom;
         }
+        @include mq(large) {
+            background-position: 30% 60%;
+        }
     }
     &-two {
         background-image: url(https://marcoguzman211.github.io/MarcoGuzman_3_08102020/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg);
@@ -52,6 +58,9 @@
         background-position: center;
         @include mq(medium) {
             background-position: 20% 65%;
+        }
+        @include mq(large) {
+            background-position: center 65%;
         }
     }
     &-three {
@@ -61,6 +70,9 @@
         @include mq(medium) {
             background-position: 20% 99%;
         }
+        @include mq(large) {
+            background-position: center 80%;
+        }
     }
     &-four {
         background-image: url(https://marcoguzman211.github.io/MarcoGuzman_3_08102020/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg);
@@ -68,6 +80,9 @@
         background-position: center bottom;
         @include mq(medium) {
             background-position: 20% 99%;
+        }
+        @include mq(large) {
+            background-position: 30% 80%;
         }
     }
 }
@@ -109,7 +124,8 @@
     row-gap: 1em;
     padding-top: 2em;
     @include mq(large) {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        column-gap: 1em;
     }
     & h2 {
         font-size: 1em;
@@ -117,6 +133,9 @@
         border-bottom: 4px solid $third;
         font-weight: 400;
         width: 40px;
+        @include mq(large) {
+            grid-column: 1/4;
+        }
     }
 }
 
@@ -163,6 +182,9 @@
     box-sizing: initial;
     width: 100%;
     justify-content: right;
+    @include mq(large) {
+        grid-column: 1/4;
+    }
     & button {
         @include buttonDegrade;
         padding-top: .2em;
