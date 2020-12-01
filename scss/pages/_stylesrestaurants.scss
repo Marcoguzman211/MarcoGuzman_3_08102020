@@ -41,6 +41,9 @@
     @include mq(medium) {
         height: 25em;
     }
+    @include mq(xlarge) {
+        height: 35em;
+    }
     &-one {
         background-image: url(https://marcoguzman211.github.io/MarcoGuzman_3_08102020/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg);
         background-size: 100%;
@@ -72,6 +75,9 @@
         }
         @include mq(large) {
             background-position: center 80%;
+        }
+        @include mq(xlarge) {
+            background-position: 20% 80%;
         }
     }
     &-four {
