@@ -177,6 +177,9 @@ body {
     border-radius: 1.25em;
     box-sizing: border-box;
     height: 100%; }
+    @media screen and (min-width: 640px) {
+      .restaurants__card {
+        position: relative; } }
     .restaurants__card-new {
       position: absolute;
       left: 72%;
@@ -189,7 +192,12 @@ body {
       color: #2a947a; }
       @media screen and (min-width: 640px) {
         .restaurants__card-new {
-          display: none; } }
+          position: absolute;
+          top: .2em;
+          left: 75%; } }
+      @media screen and (min-width: 1024px) {
+        .restaurants__card-new {
+          left: 78%; } }
     .restaurants__card-figure {
       margin: 0;
       display: flex;

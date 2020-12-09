@@ -171,6 +171,9 @@
         border-radius: 1.25em;
         box-sizing: border-box;
         height: 100%;
+        @include mq(medium) {
+            position: relative;
+        }
         &-new {
             position: absolute;
             left: 72%;
@@ -182,7 +185,12 @@
             background-color: #99e2d0;
             color: #2a947a;
             @include mq(medium) {
-                display: none;
+                position: absolute;
+                top: .2em;
+                left: 75%;
+            }
+            @include mq(large) {
+                left: 78%;
             }
         }
         &-figure {
